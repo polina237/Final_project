@@ -77,4 +77,20 @@ python app.py
     RUN pip3 install -r requirements.txt
     CMD python3 app.py
 
-## Fifth step: Information about Dockerfile and describe it’s content
+## Fifth step: How to open the port in your remote VM
+
+**Use Postman**
+
+http://--.---.--.---:5444/predict_price?catboosted?(1/0)=1&rooms=2&area=60&kitchen_area=14&ratio=0.7
+
+
+
+##  Sixth step: How to open the port in your remote VM
+
+**Build containers and run them**
+
+    docker build -t your_name/docker_folder:v.0.something .
+    docker run --network host -it your_name/docker_folder:v.0.something . /bin/bash
+    docker run --network host -d your_name/docker_folder:v.0.something .
+    docker ps
+    docker stop <container name>
