@@ -1,10 +1,10 @@
 # Final_project
 
 
-**Model predict last_price_log(rent) by using rooms, area, renovation, amount**
+#**Model predict last_price_log(rent) by using rooms, area, renovation, amount**
 
 
-**First step: Information about source data and some statistics **
+#**First step: Information about source data and some statistics **
 
 
 Dataset (155391 rows)
@@ -12,13 +12,15 @@ Dataset (155391 rows)
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/91419407/169150769-bc1bf823-877f-4791-b29c-67cdb2c0583b.png">
 
 
-**Second step: Information about model**
+#**Second step: Information about model**
 
-**To Do List**
-*Rooms = total amount of rooms 
-*Area = total area
-*Renovation = number of years remaining before renovation 
-*Amount = difference between last day and first day
+*Rooms = total amount of rooms*
+
+*Area = total area*
+
+*Renovation = number of years remaining before renovation* 
+
+*Amount = difference between last day and first day*
 
 
 I have used **RandomForestRegressor** and **CatBoostRegressor**
@@ -49,7 +51,7 @@ MSE: 0.5486212726848376
 RMSE: 0.7406897276760611
 
 
-**Third step: How to install instructions and run your app with virtual environment **
+#**Third step: How to install instructions and run your app with virtual environment **
 
 *Run your VM*
 
