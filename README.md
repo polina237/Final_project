@@ -13,14 +13,13 @@ Dataset (155391 rows)
 
 
 **Second step: Information about model**
+
 **To Do List**
 *Rooms = total amount of rooms 
-
 *Area = total area
-
 *Renovation = number of years remaining before renovation 
-
 *Amount = difference between last day and first day
+
 
 I have used **RandomForestRegressor** and **CatBoostRegressor**
 
