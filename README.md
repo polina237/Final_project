@@ -16,14 +16,24 @@ Dataset (155391 rows)
 
 
 *Rooms* = total amount of rooms 
+
+
 *Area* = total area
+
+
 *Renovation* = number of years remaining before renovation 
+
+
 *Amount* = difference between last day and first day
 
 I have used **RandomForestRegressor** and **CatBoostRegressor**
 
 *train_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2015-01-01') & (rent_df_cleaned.first_day_exposition < '2017-02-01')]*
+
+
 *test_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2017-02-01') & (rent_df_cleaned.first_day_exposition < '2018-01-01')]*
+
+
 *holdout_df = rent_df_cleaned[rent_df_cleaned.first_day_exposition >= '2018-01-01']*
 
 
