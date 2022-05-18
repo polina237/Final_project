@@ -1,12 +1,20 @@
 # Final_project
+
+
 **Model predict last_price_log(rent) by using rooms, area, renovation, amount**
+
+
 **First step**
+
+
 Dataset (155391 rows)
 
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/91419407/169150769-bc1bf823-877f-4791-b29c-67cdb2c0583b.png">
 
 
 **Second step**
+
+
 *Rooms* = total amount of rooms 
 *Area* = total area
 *Renovation* = number of years remaining before renovation 
@@ -35,7 +43,9 @@ MAE: 0.5925005350172596
 MSE: 0.5486212726848376
 RMSE: 0.7406897276760611
 
+
 **Third step**
+
 
 Run your VM
 
