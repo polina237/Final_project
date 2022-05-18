@@ -1,10 +1,10 @@
 # Final_project
 
 
-#**Model predict last_price_log(rent) by using rooms, area, renovation, amount**
+## Model predict last_price_log(rent) by using rooms, area, renovation, amount
 
 
-#**First step: Information about source data and some statistics **
+## First step: Information about source data and some statistics
 
 
 Dataset (155391 rows)
@@ -12,26 +12,26 @@ Dataset (155391 rows)
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/91419407/169150769-bc1bf823-877f-4791-b29c-67cdb2c0583b.png">
 
 
-#**Second step: Information about model**
+## Second step: Information about model
 
-*Rooms = total amount of rooms*
+* Rooms = total amount of rooms
 
-*Area = total area*
+* Area = total area
 
-*Renovation = number of years remaining before renovation* 
+* Renovation = number of years remaining before renovation 
 
-*Amount = difference between last day and first day*
+* Amount = difference between last day and first day
 
 
 I have used **RandomForestRegressor** and **CatBoostRegressor**
 
-*train_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2015-01-01') & (rent_df_cleaned.first_day_exposition < '2017-02-01')]*
+* train_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2015-01-01') & (rent_df_cleaned.first_day_exposition < '2017-02-01')]
 
 
-*test_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2017-02-01') & (rent_df_cleaned.first_day_exposition < '2018-01-01')]*
+* test_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2017-02-01') & (rent_df_cleaned.first_day_exposition < '2018-01-01')]
 
 
-*holdout_df = rent_df_cleaned[rent_df_cleaned.first_day_exposition >= '2018-01-01']*
+* holdout_df = rent_df_cleaned[rent_df_cleaned.first_day_exposition >= '2018-01-01']
 
 
 *Random forest regressors*
@@ -51,9 +51,9 @@ MSE: 0.5486212726848376
 RMSE: 0.7406897276760611
 
 
-#**Third step: How to install instructions and run your app with virtual environment **
+## Third step: How to install instructions and run your app with virtual environment 
 
-*Run your VM*
+**Run your VM**
 
 virtualenv .env -p python3.7
 
@@ -63,3 +63,18 @@ pip install -r requirements.txt
 
 python app.py
 
+
+## Fourth step: Information about Dockerfile and describe it’s content
+
+**Dockerfile**
+
+from ubuntu:20.04
+MAINTAINER Polina Golubeva
+RUN apt-get update -y
+COPY . /opt/Final_project
+WORKDIR /opt/Final_project
+RUN apt install -y python3-pip
+RUN pip3 install -r requirements.txt
+CMD python3 app.py
+
+## Fifth step: Information about Dockerfile and describe it’s content
