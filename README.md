@@ -100,13 +100,15 @@ We build container by using
 
     docker build -t your_name/docker_folder:v.0.something .
 
-We launch tha container
+We launch the container
   
     docker run --network host -it your_name/docker_folder:v.0.something . /bin/bash
     docker run --network host -d your_name/docker_folder:v.0.something .
     
 We check running container
+
     docker ps
     
 We stop the container
+
     docker stop <container name>
