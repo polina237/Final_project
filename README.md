@@ -59,13 +59,10 @@ RMSE: 0.7406897276760611
 
 **Run your VM**
 
-virtualenv .env -p python3.7
-
-source .env/bin/activate
-
-pip install -r requirements.txt
-
-python app.py
+    virtualenv .env -p python3.7
+    source .env/bin/activate
+    pip install -r requirements.txt
+    python app.py
 
 
 ## Fourth step: Information about Dockerfile and describe it’s content
