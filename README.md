@@ -89,7 +89,7 @@ RMSE: 0.7406897276760611
 
 **Use Postman**
 
-http://--.---.--.---:5444/predict_price?modeltype=1&rooms=2&area=40&renovation=2&amount=50
+http://51.250.29.153:5444/predict_price?modeltype=1&rooms=2&area=40&renovation=2&amount=50
 
 <img width="647" alt="image" src="https://user-images.githubusercontent.com/91419407/169163628-f92afca6-70f0-447a-86b9-b0d4881eddfd.png">
 <img width="640" alt="image" src="https://user-images.githubusercontent.com/91419407/169163678-37648819-a0f8-4198-a186-a5e3f61b5339.png">
