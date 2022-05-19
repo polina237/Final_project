@@ -29,6 +29,9 @@ I have used **RandomForestRegressor** and **CatBoostRegressor**
 * train_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2015-01-01') & (rent_df_cleaned.first_day_exposition < '2017-02-01')]
 
 
+<img width="232" alt="image" src="https://user-images.githubusercontent.com/91419407/169220322-ab9b6cf1-37b0-4561-92cb-c6f52b5e0523.png">
+
+
 * test_df = rent_df_cleaned[(rent_df_cleaned.first_day_exposition >= '2017-02-01') & (rent_df_cleaned.first_day_exposition < '2018-01-01')]
 
 
