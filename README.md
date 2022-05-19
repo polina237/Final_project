@@ -92,12 +92,21 @@ http://--.---.--.---:5444/predict_price?modeltype=1&rooms=2&area=40&renovation=2
 
 
 
-##  Sixth step: How to open the port in your remote VM
+##  Sixth step: How to run app using docker and which port it uses
 
 **Build containers and run them**
 
+We build container by using
+
     docker build -t your_name/docker_folder:v.0.something .
+
+We launch tha container
+  
     docker run --network host -it your_name/docker_folder:v.0.something . /bin/bash
     docker run --network host -d your_name/docker_folder:v.0.something .
+    
+We check running container
     docker ps
+    
+We stop the container
     docker stop <container name>
