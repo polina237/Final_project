@@ -6,8 +6,9 @@
 
 ## First step: Information about source data and some statistics
 
+* Data  was taken from Yandex Reality classified containing real estate listings for apartments in St. Petersburg and Leningrad Oblast from 2016 till the middle of August 2018. Initial dataset consisted of 171186 observations and 17 columns.
+* Cleaned dataset contain (155391 rows)
 
-Dataset (155391 rows)
 
 * Head of dataset
 
